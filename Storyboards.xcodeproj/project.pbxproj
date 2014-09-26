@@ -13,6 +13,9 @@
 		27140D9A19D5A09F003B181B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27140D9919D5A09F003B181B /* Images.xcassets */; };
 		27140D9D19D5A09F003B181B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27140D9B19D5A09F003B181B /* LaunchScreen.xib */; };
 		27140DA919D5A09F003B181B /* StoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27140DA819D5A09F003B181B /* StoryboardsTests.swift */; };
+		27140DB319D5A0B6003B181B /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27140DB219D5A0B6003B181B /* iphone.storyboard */; };
+		27140DB519D5A0C2003B181B /* ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27140DB419D5A0C2003B181B /* ipad.storyboard */; };
+		27140DB719D5A13E003B181B /* iPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27140DB619D5A13E003B181B /* iPadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		27140DA219D5A09F003B181B /* StoryboardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27140DA719D5A09F003B181B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27140DA819D5A09F003B181B /* StoryboardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardsTests.swift; sourceTree = "<group>"; };
+		27140DB219D5A0B6003B181B /* iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iphone.storyboard; sourceTree = "<group>"; };
+		27140DB419D5A0C2003B181B /* ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ipad.storyboard; sourceTree = "<group>"; };
+		27140DB619D5A13E003B181B /* iPadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,12 @@
 				27140D9219D5A09F003B181B /* AppDelegate.swift */,
 				27140D9419D5A09F003B181B /* ViewController.swift */,
 				27140D9619D5A09F003B181B /* Main.storyboard */,
+				27140DB419D5A0C2003B181B /* ipad.storyboard */,
+				27140DB219D5A0B6003B181B /* iphone.storyboard */,
 				27140D9919D5A09F003B181B /* Images.xcassets */,
 				27140D9B19D5A09F003B181B /* LaunchScreen.xib */,
 				27140D9019D5A09F003B181B /* Supporting Files */,
+				27140DB619D5A13E003B181B /* iPadViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -195,6 +204,8 @@
 				27140D9819D5A09F003B181B /* Main.storyboard in Resources */,
 				27140D9D19D5A09F003B181B /* LaunchScreen.xib in Resources */,
 				27140D9A19D5A09F003B181B /* Images.xcassets in Resources */,
+				27140DB519D5A0C2003B181B /* ipad.storyboard in Resources */,
+				27140DB319D5A0B6003B181B /* iphone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27140D9519D5A09F003B181B /* ViewController.swift in Sources */,
+				27140DB719D5A13E003B181B /* iPadViewController.swift in Sources */,
 				27140D9319D5A09F003B181B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
