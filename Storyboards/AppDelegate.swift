@@ -15,6 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        switch(UIDevice.currentDevice().userInterfaceIdiom){
+            
+        case .Phone :
+            var storyboard = UIStoryboard(name: "iphone", bundle: nil)
+            var rootVC = storyboard.instantiateInitialViewController() as iPhoneViewController
+            window!.rootViewController = rootVC
+            
+        case .Pad :
+            var storyboard = UIStoryboard(name: "ipad", bundle: nil)
+            var rootVC = storyboard.instantiateInitialViewController() as iPadViewController
+            window!.rootViewController = rootVC
+
+        case .Unspecified :
+            window?.rootViewController = UIViewController()
+        }
+        
+        window!.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
